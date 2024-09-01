@@ -1,5 +1,6 @@
 {
   "name": "use-ready-router",
+  "description": "lightweight Next.js hook for safely accessing dynamic route parameters",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
