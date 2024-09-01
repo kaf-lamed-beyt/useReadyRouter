@@ -23,7 +23,7 @@ The `useReadyRouter` hook takes a string parameter representing the name of the 
 ### Basic Usage
 
 ```tsx
-import { useReadyRouter } from "use-ready-router";
+import { useReadyRouter } from "use-ready-router/dist";
 
 export default function CustomerPage() {
   const { value: customerId, isReady } = useReadyRouter("id");
