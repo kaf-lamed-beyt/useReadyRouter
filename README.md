@@ -1,6 +1,8 @@
 # useReadyRouter
 
-A lightweight Next.js hook for safely accessing dynamic route parameters. It guards against undefined values during initial render or during a "hard-reload", making it ideal for use with data fetching libraries like [SWR](https://swr.vercel.app/) in Next.js applications.
+A lightweight Next.js hook for safely accessing dynamic route parameters.
+
+It guards against undefined values during initial render or during a "hard-reload", making it ideal for use with data fetching libraries like [SWR](https://swr.vercel.app/) in Next.js applications.
 
 ## Installation
 

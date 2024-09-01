@@ -1,29 +1,35 @@
-const path = require("path");
+import path from "path";
 
-module.exports = {
+export default {
   entry: "./src/index.ts",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve("dist"),
     filename: "index.js",
     library: {
-      type: "commonjs2",
+      type: "module",
     },
+  },
+  experiments: {
+    outputModule: true,
   },
   externals: {
     "next/router": "next/router",
     react: "react",
   },
-  target: "node",
+  target: ["web", "es2020"],
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         exclude: [/node_modules/],
-        loader: "builtin:swc-loader",
-        options: {
-          jsc: {
-            parser: {
-              syntax: "typescript",
+        use: {
+          loader: "builtin:swc-loader",
+          options: {
+            jsc: {
+              parser: {
+                syntax: "typescript",
+              },
+              target: "es2020",
             },
           },
         },
