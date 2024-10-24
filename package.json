@@ -9,9 +9,16 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "url": "https://github.com/kaf-lamed-beyt/useReadyRouter"
+  },
+  "bugs": {
+    "url": "https://github.com/kaf-lamed-beyt/useReadyRouter/issues"
+  },
   "scripts": {
     "build": "rspack build && tsc --emitDeclarationOnly",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "release": "standard-version"
   },
   "peerDependencies": {
     "next": ">=13.0.0",

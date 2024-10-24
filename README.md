@@ -72,7 +72,7 @@ export default function CustomerPaymentsPage() {
 
 The `useReadyRouter` hook accepts an optional second parameter: a custom parser function. This function allows you to transform the raw query parameter value into the desired type or format.
 
-### Basic Parser Example
+### Parser Example 1
 
 ```tsx
 import { useReadyRouter } from "use-ready-router";
@@ -83,7 +83,7 @@ export default function CustomerPage() {
 }
 ```
 
-### Advanced Parser Example
+### Parser Example 2
 
 You can use more complex parsing logic if needed:
 
